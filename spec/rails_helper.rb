@@ -11,6 +11,13 @@ require 'capybara/rspec'
 
 ActiveRecord::Migration.maintain_test_schema!
 
+# Capybara
+Capybara.run_server = false
+Capybara.default_driver = :selenium
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
+
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
