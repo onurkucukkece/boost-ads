@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foreman'
 gem 'unicorn'
 gem 'slim-rails'
+gem 'google-tag-manager-rails'
 
 group :development, :test do
   gem 'byebug'
