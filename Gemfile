@@ -15,6 +15,7 @@ gem 'foreman'
 gem 'unicorn'
 gem 'slim-rails'
 gem 'google-tag-manager-rails'
+gem 'circleci'
 
 group :development, :test do
   gem 'byebug'
